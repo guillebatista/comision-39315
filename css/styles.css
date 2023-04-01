@@ -40,6 +40,15 @@ header {
     max-height: 100%;
 }
 
+.fijando-bnav {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 nav {
     width: auto;
 }
@@ -98,13 +107,16 @@ nav {
 /**********************index  ************************/
 body {
     height: 100%;
-    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     grid-area: main;
     background-color: #000000
+}
+
+.carousel-inner {
+    height: 1000px;
 }
 
 h1 {
@@ -168,6 +180,7 @@ h4 {
 .container-colorvu {
     background-color: #000000;
     display: flex;
+    align-items: center;
     justify-content: start;
 }
 
@@ -176,11 +189,7 @@ h4 {
 }
 
 .texto-colorvu p {
-    display: flex;
     color: #ffffff;
-    flex-direction: column;
-    flex-wrap: wrap;
-    top: 20%;
     text-align: center;
     font-size: 25px;
 }
@@ -362,6 +371,10 @@ h5 {
 
 
 /******************* contacto ********************/
+.contacto-class {
+    background-color: #ffffff;
+}
+
 .container-formulario {
     display: flex;
     flex-direction: row;
@@ -369,10 +382,18 @@ h5 {
     padding: 50px;
 }
 
+.form-class {
+    text-align: center;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
     width: 900px;
+}
+
+.formulario legend {
+    color: #ffffff;
 }
 
 .formulario textarea {
@@ -394,11 +415,28 @@ h5 {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    background-color: #c4c4c4ee;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2c27278f;
+    align-items: center;
 }
 
-.direccion p {
+.container-footer {
+    border-right: 1px solid white;
+    padding-right: 40px;
+}
+
+.container-footer img,
+.container-footer p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-direccion {
+    border-left: 1px solid white;
+}
+
+.container-direccion p {
     font-size: 22px;
 }
 

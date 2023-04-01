@@ -6,84 +6,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div class="container-grid">
         <header>
-            <div class="container-header">
-                <a href="./index.html"><img src="./assets/images/logo-verde.PNG" alt="logo"></a>
-                <nav>
-                    <ul class="bnav">
-                        <li><a href="./index.html">INICIO</a></li>
-                        <li><a href="./pages/tienda.html">TIENDA</a></li>
-                        <li><a href="./pages/novedades.html">NOVEDADES</a></li>
-                        <li><a href="./pages/empresa.html">EMPRESA</a></li>
-                        <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-                <form action="" class="buscar-bar"><!-- en las "" va correo donde enviar la info? -->
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit"><i class="buscar"></i></button>
-                </form>
-                <div class="redes">
-                    <ul class="iconos-redes">
-                        <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/instagram.png"
-                                    alt="instagram"></a></li>
-                        <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/facebook.png"
-                                    alt="facebook"></a>
-                        </li>
-                        <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/whatsapp.png"
-                                    alt="whatsapp"></a>
-                        </li>
-                    </ul>
+            <div class="fijando-bnav">
+                <div class="container-header">
+                    <a href="./index.html"><img src="./assets/images/logo-verde.PNG" alt="logo"></a>
+                    <nav>
+                        <ul class="bnav">
+                            <li><a href="./index.html">INICIO</a></li>
+                            <li><a href="./pages/tienda.html">TIENDA</a></li>
+                            <li><a href="./pages/novedades.html">NOVEDADES</a></li>
+                            <li><a href="./pages/empresa.html">EMPRESA</a></li>
+                            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <form action="" class="buscar-bar">
+                        <input type="text" placeholder="Buscar...">
+                        <button type="submit"><i class="buscar"></i></button>
+                    </form>
+                    <div class="redes">
+                        <ul class="iconos-redes">
+                            <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/instagram.png"
+                                        alt="instagram"></a></li>
+                            <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/facebook.png"
+                                        alt="facebook"></a>
+                            </li>
+                            <li><a href="https://lnk.bio/Coderhouse"><img src="./assets/images/whatsapp.png"
+                                        alt="whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="click-aqui">
-                <a href="./pages/tienda.html">
-                    <p>PRESUPUESTOS SIN CARGO A UN SOLO CLICK</p>
-                </a>
+                <div class="click-aqui">
+                    <a href="./pages/tienda.html">
+                        <p>PRESUPUESTOS SIN CARGO A UN SOLO CLICK</p>
+                    </a>
+                </div>
             </div>
         </header>
         <main>
-            <div class="container-domo">
-                <img src="./assets/images/domo.jpg">
-                    <h1>LIDERES EN EL MERCADO</h1>
-                <div class="text-domo">
-                    <p>Gran variedad de cámaras para todas las necesidades, lideres en<br> el mercado con productos de
-                        buena calidad y las marcas mas<br>reconocidas.</p>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div>
-                    <div class="container-colorvu">
-                        <img src="./assets/images/colorvu.png">
-                        <div class="texto-colorvu">
-                            <p>Nueva linea de cámaras Color Vu, imágenes a color incluso en la noche.<br>Consulta aquí
-                                por
-                                modelos que se ajusten a ti.</p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../imagenes proyecto/images-domo.jpg" class="d-block w-100"
+                            alt="imagen de domo ptz accusense">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>DOMO PTZ ACUSSNESE</h5>
+                                <p>Nueva linea de Domo Ip con accusense</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imagenes proyecto/camrec.jpeg" class="d-block w-100"
+                            alt="imagen de camara con ciudad de fondo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>SOLUCIONES PARA TODO</h5>
+                                <p>Te ayudamos a armar tus proyectos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagenes proyecto/cam-2.jpeg" class="d-block w-100" alt="imagen de camara termica">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>CAMARAS TERMICAS</h5>
+                                <p>Incluye en tus proyectos nuestras camaras termicas de largo alcance.</p>
                         </div>
                     </div>
                 </div>
-            </div>    
-        </main>
-        <footer>
-            <div class="footer-class">
-                <img src="./assets/images/tel.png">
-                <p>+598 888 888 888</p>
-                <img src="./assets/images/envio-gratis.png">
-                <p>Envios sin cargo</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62436.41871907609!2d-54.28833517526106!3d-34.669599258544004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9574906fe6cf5c27%3A0xfcc43bd31f3ddc2e!2zU2VuZGVybyDigJxCYXJyYSBkZSBsYSBMYWd1bmHigJ0!5e0!3m2!1ses-419!2suy!4v1678299512616!5m2!1ses-419!2suy"
-                    width="500" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
+                <div class="container-colorvu">
+                    <img src="./assets/images/colorvu.png">
+                    <div class="texto-colorvu">
+                        <p>Nueva linea de cámaras Color Vu, imágenes a color incluso en la noche.<br>Consulta aquí
+                            por
+                            modelos que se ajusten a ti.</p>
+                    </div>
+                </div>
             </div>
-            <div class="direccion">
-                <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div>
+                    <img src="./assets/images/tel.png">
+                    <p>+598 123 456 789</p>
+                </div>
+                <div>
+                    <img src="./assets/images/envio-gratis.png">
+                    <p>Envios sin cargo</p>
+                </div>
+                <ul>
+                    <li>Devoluciones</li>
+                    <li>Condiciones de uso</li>
+                    <li>Politica de Privacidad</li>
+                </ul>
+            </div>
+            <div>
+                <h4>MALDONADO</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1375.79155380322!2d-54.95653823537832!3d-34.90137468713275!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1679876395792!5m2!1ses-419!2suy"
+                    width="500" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="container-direccion">
+                <ul>
+                    <h4>MONTEVIDEO</h4>
+                    <li>2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+                    <li>Telefono +598 987 654 321</li>
+                    <li>Lunes a viernes de 9 a 13 hs y de 14 a 18 hs Sábado de 9 a 14 hs.</li>
+                </ul>
+                <ul>
+                    <h4>MALDONADO</h4>
+                    <li>2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+                    <li>Telefono +598 123 456 789</li>
+                    <li>Lunes a Viernes de 9 a 18hs.</li>
+                </ul>
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
